@@ -14,30 +14,30 @@ A modern, feature-rich e-commerce mobile application built with React Native 0.8
 ## 📱 App Screenshots
 
 ### Home Screen
-![Home Screen](docs/screenshots/home-screen.jpg)
+<img src="docs/screenshots/home-screen.jpg" width="300" alt="Home Screen" />
 *Welcome screen with featured toys and category filters*
 
 ### Product Details
-![Product Details](docs/screenshots/product-details.jpg)
+<img src="docs/screenshots/product-details.jpg" width="300" alt="Product Details" />
 *Product information with add to cart functionality*
 
 ### Shopping Cart
-![Shopping Cart](docs/screenshots/shopping-cart.jpg)
+<img src="docs/screenshots/shopping-cart.jpg" width="300" alt="Shopping Cart" />
 *Cart management with quantity controls and order summary*
 
 ### Checkout
-![Checkout](docs/screenshots/check-out.jpg)
+<img src="docs/screenshots/check-out.jpg" width="300" alt="Checkout" />
 *Checkout process with payment options*
 
 ### Orders
-![Orders](docs/screenshots/orders.jpg)
+<img src="docs/screenshots/orders.jpg" width="300" alt="Orders" />
 *Order history and tracking*
 
 ## 🎥 Demo Video
 
 Watch the complete app demonstration:
 
-[![Demo Video](docs/screenshots/home-screen.jpg)](docs/videos/demo-video.mp4)
+<img src="docs/screenshots/home-screen.jpg" width="300" alt="Demo Video Thumbnail" />
 
 **[📺 Click here to watch the full demo video](docs/videos/demo-video.mp4)**
 
