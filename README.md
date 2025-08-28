@@ -1,97 +1,229 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ToyShop - React Native E-commerce App
 
-# Getting Started
+A beautifully designed, feature-rich toy e-commerce app built with React Native, featuring a playful and kids-friendly design system.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 🎨 Design Features
 
-## Step 1: Start Metro
+### Playful Color Palette
+- **Primary**: Playful pink (#FF6B9D)
+- **Secondary**: Mint green (#4ECDC4)
+- **Accent**: Sunny yellow (#FFE66D)
+- **Success**: Soft green (#95E1D3)
+- **Warning**: Warm yellow (#F7DC6F)
+- **Error**: Soft red (#F8BBD9)
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+### Modern UI Components
+- Card-based layouts with shadows and rounded corners
+- Smooth animations and transitions
+- Consistent spacing and typography system
+- Accessible design with proper contrast ratios
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 🚀 Core Features
 
-```sh
-# Using npm
-npm start
+### Home Screen
+- **Featured Products**: Horizontal scrollable featured toys section
+- **Category Chips**: Easy category filtering with visual chips
+- **Search with Debounce**: Real-time search with 300ms debounce
+- **Pull-to-Refresh**: Refresh product listings
+- **Cart Badge**: Persistent cart item count in navigation
 
-# OR using Yarn
-yarn start
+### Product Catalog
+- **Grid Layout**: 2-column responsive grid for mobile
+- **Category Filtering**: Filter by 12 different toy categories
+- **Search Functionality**: Search across titles, descriptions, brands, and tags
+- **Product Cards**: Rich cards with ratings, badges, and wishlist functionality
+
+### Product Details
+- **Image Gallery**: Swipeable image gallery with indicators
+- **Product Information**: Complete product details with ratings and reviews
+- **Quantity Stepper**: Interactive quantity selector
+- **Add to Cart**: One-tap add to cart with confirmation
+- **Wishlist**: Add/remove from wishlist functionality
+- **Recommendations**: "You may also like" product suggestions
+
+### Shopping Cart
+- **Cart Management**: Add, remove, and update quantities
+- **Order Summary**: Subtotal, tax calculation (18% GST), and total
+- **Empty State**: Beautiful empty cart with call-to-action
+- **Clear Cart**: Bulk cart clearing with confirmation
+
+### Checkout Process
+- **Guest Checkout**: No account required
+- **Form Validation**: Real-time form validation
+- **Order Summary**: Complete order review
+- **Payment Options**: Credit card and Cash on Delivery
+- **Order Confirmation**: Success screen with order details
+
+### Order Management
+- **Order History**: Complete order listing with status
+- **Order Status**: Visual status indicators (Pending, Confirmed, Shipped, Delivered)
+- **Order Details**: Detailed order information
+- **New Order Highlighting**: Recently placed orders are highlighted
+
+## 🛠 Technical Features
+
+### State Management
+- **Context API**: Centralized state management
+- **AsyncStorage**: Persistent cart, orders, and wishlist data
+- **Real-time Updates**: Immediate UI updates on state changes
+
+### Performance Optimizations
+- **Memoized Components**: React.memo for performance
+- **Lazy Loading**: Efficient image loading
+- **FlatList Virtualization**: Optimized list rendering
+- **Debounced Search**: Reduced API calls during search
+
+### Data Structure
+- **Comprehensive Product Data**: 18+ products with rich metadata
+- **Category System**: 12 well-defined toy categories
+- **Rating System**: 5-star rating with review counts
+- **Stock Management**: Real-time stock status
+
+## 📱 Navigation
+
+### Bottom Tab Navigation
+- **Home**: Featured products and search
+- **Categories**: Category browsing and filtering
+- **Cart**: Shopping cart with badge count
+- **Orders**: Order history and tracking
+
+### Stack Navigation
+- **Product Details**: Detailed product view
+- **Checkout**: Order completion flow
+- **Order Details**: Individual order information
+
+## 🎯 User Experience
+
+### Accessibility
+- **Large Tap Targets**: Minimum 44px touch targets
+- **High Contrast**: Proper color contrast ratios
+- **Screen Reader Support**: Proper accessibility labels
+- **Dynamic Type**: Support for larger fonts
+
+### Error Handling
+- **Graceful Empty States**: Beautiful empty state designs
+- **Form Validation**: Real-time validation feedback
+- **Network Error Handling**: Offline state management
+- **Loading States**: Skeleton loaders and spinners
+
+### Animations
+- **Smooth Transitions**: 300ms animation duration
+- **Press Feedback**: Visual feedback on interactions
+- **Loading Animations**: Engaging loading states
+- **Micro-interactions**: Subtle UI animations
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd ToyShop
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **iOS Setup** (if developing for iOS)
+   ```bash
+   cd ios && pod install && cd ..
+   ```
+
+4. **Run the app**
+   ```bash
+   # For iOS
+   npm run ios
+   
+   # For Android
+   npm run android
+   ```
+
+## 🏗 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ProductCard.tsx  # Product display card
+│   ├── SearchBar.tsx    # Search input component
+│   └── CategoryChips.tsx # Category filter chips
+├── screens/            # App screens
+│   ├── HomeScreen.tsx  # Main home screen
+│   ├── CartScreen.tsx  # Shopping cart
+│   ├── CheckoutScreen.tsx # Checkout process
+│   └── OrdersScreen.tsx # Order history
+├── context/            # State management
+│   └── store.tsx       # Main app store
+├── data/               # Static data
+│   └── products.tsx    # Product catalog
+├── navigation/         # Navigation configuration
+│   └── index.tsx       # Navigation setup
+└── theme.ts           # Design system
 ```
 
-## Step 2: Build and run your app
+## 🎨 Design System
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### Typography
+- **H1**: 28px, Bold (800)
+- **H2**: 24px, Bold (700)
+- **H3**: 20px, Semi-bold (600)
+- **Body**: 16px, Regular (400)
+- **Caption**: 14px, Regular (400)
+- **Small**: 12px, Regular (400)
 
-### Android
+### Spacing
+- **XS**: 4px
+- **SM**: 8px
+- **MD**: 16px
+- **LG**: 24px
+- **XL**: 32px
+- **XXL**: 48px
 
-```sh
-# Using npm
-npm run android
+### Border Radius
+- **XS**: 4px
+- **SM**: 8px
+- **MD**: 12px
+- **LG**: 16px
+- **XL**: 24px
+- **Round**: 50px
 
-# OR using Yarn
-yarn android
-```
+## 🔧 Dependencies
 
-### iOS
+- **React Native**: 0.81.0
+- **React Navigation**: 7.x
+- **AsyncStorage**: 2.2.0
+- **Vector Icons**: 10.3.0
+- **TypeScript**: 5.8.3
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+## 🚀 Future Enhancements
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### Planned Features
+- **User Authentication**: Login/signup system
+- **Payment Integration**: Real payment gateway
+- **Push Notifications**: Order status updates
+- **Reviews System**: User reviews and ratings
+- **Wishlist Management**: Dedicated wishlist screen
+- **Coupon System**: Discount codes and promotions
+- **Recently Viewed**: Product history tracking
 
-```sh
-bundle install
-```
+### Performance Improvements
+- **Image Caching**: Advanced image optimization
+- **Offline Support**: Offline-first architecture
+- **Bundle Optimization**: Code splitting and lazy loading
+- **Analytics**: User behavior tracking
 
-Then, and every time you update your native dependencies, run:
+## 📄 License
 
-```sh
-bundle exec pod install
-```
+This project is licensed under the MIT License.
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## 🤝 Contributing
 
-```sh
-# Using npm
-npm run ios
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
-# OR using Yarn
-yarn ios
-```
+---
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+**Built with ❤️ for the next generation of toy shoppers!**
