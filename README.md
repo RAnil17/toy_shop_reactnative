@@ -61,22 +61,23 @@ A modern, feature-rich e-commerce mobile application built with React Native 0.8
 ```
 src/
 ├── components/          # Reusable UI components
-│   ├── CategoryChips.tsx
-│   ├── ProductCard.tsx
-│   └── SearchBar.tsx
+│   ├── CategoryChips.js
+│   ├── ProductCard.js
+│   └── SearchBar.js
 ├── context/            # State management
-│   └── store.tsx
-├── data/               # Mock data and types
-│   └── products.tsx
+│   └── store.js
+├── data/               # Mock data
+│   └── products.js
 ├── navigation/         # Navigation configuration
-│   └── index.tsx
+│   └── index.js
 ├── screens/            # App screens
-│   ├── HomeScreen.tsx
-│   ├── CartScreen.tsx
-│   ├── CheckoutScreen.tsx
-│   ├── OrdersScreen.tsx
-│   └── DetailsScreen.tsx
-└── theme.ts           # Design system and colors
+│   ├── HomeScreen.js
+│   ├── CartScreen.js
+│   ├── checkoutScreen.js
+│   ├── ordersScreen.js
+│   ├── detailsScreen.js
+│   └── CategoriesScreen.js
+└── theme.js           # Design system and colors
 ```
 
 ## 🎨 Design System

@@ -12,7 +12,7 @@ export default function CheckoutScreen({ navigation }) {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.wrap}>
         <Text style={styles.h1}>Checkout</Text>
         <Text style={styles.meta}>Total to pay</Text>
@@ -23,7 +23,7 @@ export default function CheckoutScreen({ navigation }) {
           accessibilityRole="button"
           accessibilityLabel="Pay Now"
         >
-          <Icon name="credit-card-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
+          <Icon name="credit-card-outline" size={20} color="#fff" style={styles.btnIcon} />
           <Text style={styles.btnText}>Pay Now</Text>
         </TouchableOpacity>
         <TouchableOpacity 
@@ -32,8 +32,8 @@ export default function CheckoutScreen({ navigation }) {
           accessibilityRole="button"
           accessibilityLabel="Go Back"
         >
-          <Icon name="arrow-left" size={20} color="#111" style={{ marginRight: 8 }} />
-          <Text style={[styles.btnText, { color: "#111" }]}>Back</Text>
+          <Icon name="arrow-left" size={20} color="#111" style={styles.btnIcon} />
+          <Text style={[styles.btnText, styles.btnGhostText]}>Back</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -41,6 +41,7 @@ export default function CheckoutScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+  container: { flex: 1 },
   wrap: { flex: 1, alignItems: "center", justifyContent: "center", padding: 16, gap: 10 },
   h1: { fontSize: 22, fontWeight: "800" },
   meta: { color: "#666" },
@@ -48,4 +49,6 @@ const styles = StyleSheet.create({
   btn: { backgroundColor: "#0a7", paddingHorizontal: 18, paddingVertical: 14, borderRadius: 12, marginTop: 8, flexDirection: "row", alignItems: "center" },
   btnGhost: { backgroundColor: "#eee" },
   btnText: { color: "#fff", fontWeight: "800" },
+  btnGhostText: { color: "#111" },
+  btnIcon: { marginRight: 8 },
 });

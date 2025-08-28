@@ -22,17 +22,17 @@ export default function HomeScreen({ navigation }) {
   }, [products, query, activeCat]);
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.h1}>ToyShop</Text>
-        <View style={{ flexDirection: "row", gap: 8 }}>
+        <View style={styles.headerButtons}>
           <TouchableOpacity 
             style={styles.btn} 
             onPress={() => navigation.navigate("Orders")}
             accessibilityRole="button"
             accessibilityLabel="View Orders"
           >
-            <Icon name="clipboard-text-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
+            <Icon name="clipboard-text-outline" size={20} color="#fff" style={styles.btnIcon} />
             <Text style={styles.btnText}>Orders</Text>
           </TouchableOpacity>
           <TouchableOpacity 
@@ -41,23 +41,23 @@ export default function HomeScreen({ navigation }) {
             accessibilityRole="button"
             accessibilityLabel="Open Cart"
           >
-            <Icon name="cart-outline" size={20} color="#fff" style={{ marginRight: 8 }} />
+            <Icon name="cart-outline" size={20} color="#fff" style={styles.btnIcon} />
             <Text style={styles.btnText}>Cart ({cart.length})</Text>
           </TouchableOpacity>
         </View>
       </View>
 
       <FlatList
-        contentContainerStyle={{ padding: 16 }}
+        contentContainerStyle={styles.listContainer}
         numColumns={2}
-        columnWrapperStyle={{ justifyContent: 'space-between' }}
+        columnWrapperStyle={styles.columnWrapper}
         ListHeaderComponent={
           <View>
-            <View style={{ paddingHorizontal: 16 }}>
+            <View style={styles.searchContainer}>
               <SearchBar value={query} onChange={setQuery} />
             </View>
             <CategoryChips categories={categories} active={activeCat} onSelect={setActiveCat} />
-            <View style={{ height: 8 }} />
+            <View style={styles.headerSpacing} />
           </View>
         }
         data={filtered}
@@ -71,8 +71,15 @@ export default function HomeScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+  container: { flex: 1 },
   header: { paddingHorizontal: 16, paddingTop: 10, flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
+  headerButtons: { flexDirection: "row", gap: 8 },
   h1: { fontSize: 24, fontWeight: "800" },
   btn: { backgroundColor: "#111", paddingHorizontal: 12, paddingVertical: 8, borderRadius: 8, flexDirection: "row", alignItems: "center" },
+  btnIcon: { marginRight: 8 },
   btnText: { color: "#fff", fontWeight: "700" },
+  listContainer: { padding: 16 },
+  columnWrapper: { justifyContent: 'space-between' },
+  searchContainer: { paddingHorizontal: 16 },
+  headerSpacing: { height: 8 },
 });

@@ -92,7 +92,7 @@ export default function CartScreen({ navigation }) {
         accessibilityRole="button"
         accessibilityLabel="Start Shopping"
       >
-        <Icon name="shopping" size={20} color="#FFFFFF" style={{ marginRight: 8 }} />
+        <Icon name="shopping" size={20} color="#FFFFFF" style={styles.buttonIcon} />
         <Text style={styles.shopNowText}>Start Shopping</Text>
       </TouchableOpacity>
     </View>
@@ -194,7 +194,7 @@ export default function CartScreen({ navigation }) {
           accessibilityRole="button"
           accessibilityLabel="Proceed to Checkout"
         >
-          <Icon name="credit-card-outline" size={20} color="#FFFFFF" style={{ marginRight: 8 }} />
+                      <Icon name="credit-card-outline" size={20} color="#FFFFFF" style={styles.buttonIcon} />
           <Text style={styles.checkoutText}>Proceed to Checkout</Text>
           <Text style={styles.checkoutTotal}>₹{total}</Text>
         </TouchableOpacity>
@@ -402,5 +402,8 @@ const styles = StyleSheet.create({
   checkoutTotal: {
     ...theme.typography.h3,
     color: "#FFFFFF",
+  },
+  buttonIcon: {
+    marginRight: 8,
   },
 });
