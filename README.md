@@ -13,48 +13,35 @@ A modern, feature-rich e-commerce mobile application built with React Native 0.8
 
 ## 📱 App Screenshots
 
-> **📸 Screenshots Coming Soon!** 
-> 
-> To add screenshots to your repository:
-> 1. Take screenshots of your app
-> 2. Save them as `docs/screenshots/home-screen.png`, `docs/screenshots/shopping-cart.png`, etc.
-> 3. Run: `git add docs/screenshots/ && git commit -m "Add screenshots" && git push origin main`
+### Home Screen
+![Home Screen](docs/screenshots/home-screen.jpg)
+*Welcome screen with featured toys and category filters*
 
-### Screenshots to Add:
-- **Home Screen** - Welcome screen with featured toys and category filters
-- **Product Details** - Product information with add to cart functionality  
-- **Shopping Cart** - Cart management with quantity controls and order summary
-- **Checkout** - Checkout process with payment options
-- **Orders** - Order history and tracking
+### Product Details
+![Product Details](docs/screenshots/product-details.jpg)
+*Product information with add to cart functionality*
 
-### Quick Setup:
-```bash
-# Copy your screenshots to docs/screenshots/ with these exact names:
-# - home-screen.png
-# - product-details.png  
-# - shopping-cart.png
-# - checkout-screen.png
-# - orders-screen.png
+### Shopping Cart
+![Shopping Cart](docs/screenshots/shopping-cart.jpg)
+*Cart management with quantity controls and order summary*
 
-# Then upload them:
-git add docs/screenshots/
-git commit -m "Add app screenshots"
-git push origin main
-```
+### Checkout
+![Checkout](docs/screenshots/check-out.jpg)
+*Checkout process with payment options*
+
+### Orders
+![Orders](docs/screenshots/orders.jpg)
+*Order history and tracking*
 
 ## 🎥 Demo Video
 
-> **🎬 Demo Video Coming Soon!**
-> 
-> To add a demo video:
-> 1. Record a 2-3 minute demo of your app
-> 2. Save it as `docs/videos/app-demo.mp4`
-> 3. Run: `git add docs/videos/ && git commit -m "Add demo video" && git push origin main`
+Watch the complete app demonstration:
 
-### Video Recording Options:
-- **Use the provided script:** `cd docs && record-demo.bat`
-- **Manual recording:** Use your device's built-in screen recorder
-- **Follow the script:** See `docs/QUICK_START.md` for detailed instructions
+[![Demo Video](docs/screenshots/home-screen.jpg)](docs/videos/demo-video.mp4)
+
+**[📺 Click here to watch the full demo video](docs/videos/demo-video.mp4)**
+
+*This video demonstrates all the key features of the ToyShop app including navigation, product browsing, cart management, and checkout process.*
 
 ## 🚀 Features Demonstrated
 
