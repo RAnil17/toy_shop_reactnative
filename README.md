@@ -37,7 +37,7 @@ A modern, feature-rich e-commerce mobile application built with React Native 0.8
 
 Watch the complete app demonstration:
 
-<img src="docs/screenshots/home-screen.jpg" width="300" alt="Demo Video Thumbnail" />
+
 
 **[📺 Click here to watch the full demo video](docs/videos/demo-video.mp4)**
 
