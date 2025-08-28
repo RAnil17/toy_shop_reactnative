@@ -1,6 +1,6 @@
 # ToyShop - React Native E-commerce App
 
-A modern, feature-rich e-commerce mobile application built with React Native 0.81 and TypeScript.
+A modern, feature-rich e-commerce mobile application built with React Native 0.81 and JavaScript.
 
 ## 🚀 Features
 
@@ -11,19 +11,47 @@ A modern, feature-rich e-commerce mobile application built with React Native 0.8
 - **Responsive Design**: Optimized for different screen sizes
 - **Accessibility**: Screen reader support and proper accessibility labels
 
-## 📱 Screenshots
+## 📱 App Screenshots
 
-- Home Screen with featured products
-- Category browsing with filters
-- Product details with image gallery
-- Shopping cart with order summary
-- Checkout process
-- Order tracking
+### Home Screen
+![Home Screen](docs/screenshots/home-screen.png)
+*Welcome screen with featured toys and category filters*
+
+### Product Details
+![Product Details](docs/screenshots/product-details.png)
+*Product information with add to cart functionality*
+
+### Shopping Cart
+![Shopping Cart](docs/screenshots/shopping-cart.png)
+*Cart management with quantity controls and order summary*
+
+### Checkout
+![Checkout](docs/screenshots/checkout-screen.png)
+*Checkout process with payment options*
+
+### Orders
+![Orders](docs/screenshots/orders-screen.png)
+*Order history and tracking*
+
+## 🎥 Demo Video
+
+[![App Demo](docs/screenshots/home-screen.png)](docs/videos/app-demo.mp4)
+
+*Click the image above to watch the full demo video*
+
+## 🚀 Features Demonstrated
+
+- **Modern UI/UX** with side-by-side product cards
+- **Search & Filter** functionality
+- **Shopping Cart** management
+- **Checkout Process** with payment options
+- **Order Tracking** and history
+- **Responsive Design** for mobile devices
 
 ## 🛠️ Tech Stack
 
 - **React Native**: 0.81
-- **TypeScript**: For type safety
+- **JavaScript**: Modern ES6+ syntax
 - **React Navigation**: For navigation between screens
 - **React Native Vector Icons**: For beautiful icons
 - **AsyncStorage**: For local data persistence
